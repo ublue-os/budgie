@@ -38,7 +38,7 @@ jobs:
       - name: Matrix Variables
         run: |
           if [[ "${{ matrix.image_flavor }}" == "main" ]]; then
-              echo "IMAGE_NAME=bluefin" >> $GITHUB_ENV
+              echo "IMAGE_NAME=budgie" >> $GITHUB_ENV
           else
               echo "IMAGE_NAME=${{ format('{0}-{1}', env.IMAGE_BASE_NAME, matrix.image_flavor) }}" >> $GITHUB_ENV
           fi
