@@ -10,10 +10,14 @@ To try it:
 
     rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/budgie:38
 
-or
+or if you have an NVIDIA GPU:
 
     rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/budgie-nvidia:38
 
 ## Caveats
 
-Ideally this would be based off the `base` image but currently it's just adding budgie to silverblue, you need to select budgie from the GDM screen to use it, then you should be good to go. Future versions will just have budgie as the default. 
+- This is using the same official packages as Fedora, but is assembled differently
+  - Future images will be based on the official method
+  - When that happens these images will just get updated, you probably won't need to reinstall (though you will want to to use Budgie's recommended partition layout)
+  - In the meantime enjoy!
+- Thanks to @jerbmega for the lightdm workaround!
