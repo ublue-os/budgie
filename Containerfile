@@ -14,6 +14,8 @@ ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
 
 ADD packages.json /tmp/packages.json
 ADD build.sh /tmp/build.sh
+RUN systemctl enable lightdm
+RUN systemctl enable ublue-lightdm-workaround
 
 RUN /tmp/build.sh && \
     rm -rf /tmp/* /var/* && \
