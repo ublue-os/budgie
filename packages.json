@@ -6,11 +6,13 @@
 		"budgie-desktop",    
 		"budgie-desktop-defaults",    
 		"budgie-desktop-devel",    
-		"budgie-desktop-docs",    
+		"budgie-desktop-docs",
 		"f38-backgrounds-budgie",    
 		"fedora-release-budgie",
+		"gnome-terminal",
 		"lightdm",
-		"zsh"
+		"slick-greeter"
+		
             ]
         },
         "exclude": {
