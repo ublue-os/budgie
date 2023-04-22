@@ -28,8 +28,8 @@ jobs:
         major_version: [38]
         include:
           - major_version: 38
-            is_latest_version: false
-            is_stable_version: false
+            is_latest_version: true
+            is_stable_version: true
     steps: 
       # Checkout push-to-registry action GitHub repository
       - name: Checkout Push to Registry action
