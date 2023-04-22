@@ -1,0 +1,38 @@
+{
+    "all": {
+        "include": {
+            "all": [
+		"budgie-backgrounds",
+		"budgie-desktop",    
+		"budgie-desktop-defaults",    
+		"budgie-desktop-devel",    
+		"budgie-desktop-docs",    
+		"f38-backgrounds-budgie",    
+		"fedora-release-budgie",    
+		"zsh"
+            ]
+        },
+        "exclude": {
+            "all": [
+            ]
+        }
+    },
+    "37": {
+        "include": {
+            "all": [
+	    ]
+        },
+        "exclude": {
+            "all": []
+        }
+    },
+    "38": {
+        "include": {
+            "all": []
+        },
+        "exclude": {
+            "all": [
+	    ]
+        }
+    }
+}
