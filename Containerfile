@@ -14,10 +14,10 @@ ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
 
 ADD packages.json /tmp/packages.json
 ADD build.sh /tmp/build.sh
-RUN systemctl enable lightdm
-RUN systemctl enable ublue-lightdm-workaround
 
 RUN /tmp/build.sh && \
+    systemctl enable lightdm && \
+    systemctl enable ublue-lightdm-workaround && \
     rm -rf /tmp/* /var/* && \
     ostree container commit && \
     mkdir -p /var/tmp && \
