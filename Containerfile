@@ -8,6 +8,9 @@ FROM ${BASE_IMAGE}:${FEDORA_MAJOR_VERSION} AS builder
 
 COPY etc /etc
 RUN chmod +x /etc/ublue-lightdm-workaround.sh
+RUN systemctl enable lightdm
+RUN systemctl enable ublue-lightdm-workaround
+
 
 ARG IMAGE_NAME="${IMAGE_NAME}"
 ARG FEDORA_MAJOR_VERSION="${FEDORA_MAJOR_VERSION}"
