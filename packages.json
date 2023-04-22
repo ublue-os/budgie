@@ -11,6 +11,7 @@
 		"fedora-release-budgie",
 		"gnome-terminal",
 		"lightdm",
+		"nemo", 
 		"slick-greeter"
 		
             ]
