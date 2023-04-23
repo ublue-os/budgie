@@ -1,7 +1,8 @@
 # budgie
 
 **This image is a prototype and is alpha**
-[ISOs are available in the release section](https://github.com/ublue-os/budgie/releases)
+
+### [ISOs are available in the release section](https://github.com/ublue-os/budgie/releases)
 
 [![release-please](https://github.com/ublue-os/budgie/actions/workflows/release-please.yml/badge.svg)](https://github.com/ublue-os/budgie/actions/workflows/release-please.yml)
 
