@@ -22,3 +22,19 @@ RUN /tmp/build.sh && \
     ostree container commit && \
     mkdir -p /var/tmp && \
     chmod -R 1777 /var/tmp
+
+FROM fedora:38 as budgieList
+
+RUN dnf group info \
+        budgie-desktop-environment \
+        budgie-desktop-apps \
+    | awk '/^  /' \
+    | xargs dnf group info -v  2>/dev/null \
+    | awk '$2 == "fedora" || $2 == "updates" || $2 == "@System"{print $1}'  > /budgie.txt
+
+FROM builder
+
+COPY --from=budgieList /budgie.txt /tmp/budgie.txt
+
+RUN xargs -a /tmp/budgie.txt rpm-ostree install
+RUN ostree container commit
