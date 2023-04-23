@@ -10,7 +10,7 @@
 
 To try it:
 
-    rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/budgie:38
+    rpm-ostree rebase ostree-unverified-registry:ghcr.io/ublue-os/budgie-main:38
 
 or if you have an NVIDIA GPU:
 
