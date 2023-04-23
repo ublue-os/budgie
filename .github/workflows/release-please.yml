@@ -40,7 +40,7 @@ jobs:
         uses: ublue-os/isogenerator@v2.0.0
         id: isogenerator
         with:
-          image-name: universalblue
+          image-name: budgie
           installer-repo: releases
           installer-major-version: 38
           boot-menu-path: boot_menu.yml
