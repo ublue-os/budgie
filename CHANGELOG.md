@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/ublue-os/budgie/compare/v1.0.0...v1.0.1) (2023-04-23)
+
+
+### Bug Fixes
+
+* update README.md ([#28](https://github.com/ublue-os/budgie/issues/28)) ([b89946e](https://github.com/ublue-os/budgie/commit/b89946e722dd62d6d3c96cd9d13c1bc278c7ee5f))
+
 ## 1.0.0 (2023-04-23)
 
 
