@@ -25,12 +25,13 @@ RUN /tmp/build.sh && \
 
 FROM fedora:38 as budgieList
 
+# Try to get a list of packages
 RUN dnf group info \
         budgie-desktop-environment \
         budgie-desktop-apps \
     | awk '/^  /' \
     | xargs dnf group info -v  2>/dev/null \
-    | awk '$2 == "fedora" || $2 == "updates" || $2 == "@System"{print $1}'  > /budgie.txt
+    | awk '($2 == "fedora" || $2 == "updates" || $2 == "@System") && ($1 ~ /noarch/ || $1 ~ /x86_64/){print $1}'  > /budgie.txt
 
 FROM builder
 
