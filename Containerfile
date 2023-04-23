@@ -25,17 +25,20 @@ RUN /tmp/build.sh && \
 
 FROM fedora:38 as budgieList
 
-# Try to get a list of packages
+# Try to get a list of unversioned packages
 RUN dnf group info \
         budgie-desktop-environment \
         budgie-desktop-apps \
     | awk '/^  /' \
     | xargs dnf group info -v  2>/dev/null \
-    | awk '($2 == "fedora" || $2 == "updates" || $2 == "@System") && ($1 ~ /noarch/ || $1 ~ /x86_64/){print $1}'  > /budgie.txt
+    | awk '($2 == "fedora" || $2 == "updates" || $2 == "@System") && ($1 ~ /noarch/ || $1 ~ /x86_64/){print $1}' \
+    |  awk 'NF -= 2{$0=$0; print}' FS='-' OFS='-' \
+    | tee /budgie.txt
 
 FROM builder
 
 COPY --from=budgieList /budgie.txt /tmp/budgie.txt
 
-RUN xargs -a /tmp/budgie.txt rpm-ostree install
+RUN xargs -a /tmp/budgie.txt rpm-ostree install \
+    && rm -rf /var/*
 RUN ostree container commit
