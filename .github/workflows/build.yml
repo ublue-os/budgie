@@ -1,13 +1,12 @@
 name: Build and Push Image
 on:
-  schedule:
-    - cron: '20 22 * * *'  # 10:20pm everyday
-  push:
-    branches:
-      - main
+  pull_request:
     paths-ignore:
       - '**.md'
       - '**.txt'
+  merge_group:    
+  schedule:
+    - cron: '20 22 * * *'  # 10:20pm everyday
   workflow_dispatch:
 env:
     IMAGE_BASE_NAME: budgie
