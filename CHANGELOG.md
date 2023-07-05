@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/ublue-os/budgie/compare/v1.0.1...v1.0.2) (2023-07-03)
+
+
+### Bug Fixes
+
+* remove validation ([5bc8cdb](https://github.com/ublue-os/budgie/commit/5bc8cdb801e3f14c9fe85aa1d9f385fc4057b9e5))
+
 ## [1.0.1](https://github.com/ublue-os/budgie/compare/v1.0.0...v1.0.1) (2023-04-23)
 
 
