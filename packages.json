@@ -14,11 +14,11 @@
 		"lightdm",
 		"nemo", 
 		"slick-greeter"
-		
             ]
         },
         "exclude": {
             "all": [
+      		"google-noto-sans-cjk-fonts"
             ]
         }
     },
