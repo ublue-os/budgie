@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/ublue-os/budgie/compare/v1.0.1...v1.1.0) (2023-12-05)
+
+
+### Features
+
+* add gnome-software-rpm-ostree ([42b682c](https://github.com/ublue-os/budgie/commit/42b682cea4e4a4dc7f5034dd380d0c45aec9eaa1))
+
+
+### Bug Fixes
+
+* **packages:** Exclude google-noto-sans-cjk-fonts ([0254ad3](https://github.com/ublue-os/budgie/commit/0254ad383fed6e408b7de78334f7cd38424197f6))
+* remove validation ([5bc8cdb](https://github.com/ublue-os/budgie/commit/5bc8cdb801e3f14c9fe85aa1d9f385fc4057b9e5))
+
 ## [1.0.1](https://github.com/ublue-os/budgie/compare/v1.0.0...v1.0.1) (2023-04-23)
 
 
