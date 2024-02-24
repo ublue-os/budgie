@@ -2,7 +2,7 @@
 
 **This image is a prototype and is alpha**
 
-### [ISOs are available in the release section](https://github.com/ublue-os/budgie/releases)
+### [This image is sunset, get Budgie Builds here](https://github.com/ublue-os/main)
 
 [![release-please](https://github.com/ublue-os/budgie/actions/workflows/release-please.yml/badge.svg)](https://github.com/ublue-os/budgie/actions/workflows/release-please.yml)
 
